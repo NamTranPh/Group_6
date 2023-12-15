@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+	text-decoration: none;
+  }
+.booksp{
+	padding-top: 75px;
+}  
+.booksp .main{
+	height: 100%;
+}
+.booksp .title span{
+   color: #d8a61b;
+}
+/* .booksp .title{
+	padding-bottom: 0px;
+ } */
+.booksp .text a{
+	text-decoration: none;
+	color: black;
+}
+.booksp .imgcard{
+	text-align: center;
+}
+.booksp .card-title{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	height: calc(2 * 1.2em);
+}
+.booksp .price-main{
+	color: red;
+	font-weight: bold;
+}
+.booksp .price-old{
+	padding: 0;
+	color: #888888;
+    text-decoration: line-through;
+}
+.booksp .card-sale{
+	background-color: #F7941E;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+	color: #fff;
+}
+.booksp .card-sale span{
+	font-weight: bold;
+}
+@media (max-width:2000px) {
+	.booksp .imgcard img{
+		height: 248px;
+		align-items: center;
+	}
+	.booksp .imgcard .full-img img{
+		height: 248px;
+		width: 70%;
+		padding-top: 5px;
+	}
+}
+@media (max-width:992px) {
+	.booksp .imgcard img{
+		height: 300px;
+	}
+	.booksp .imgcard .full-img img{
+		height: 300px;
+	}
+}
+@media (max-width:768px) {
+	.booksp .imgcard img{
+		height: 260px;
+	}
+	.booksp .imgcard .full-img img{
+		height: 260px;
+	}
+}
+@media (max-width:575px) {
+	.booksp .imgcard img{
+		height: 260px;
+	}
+	.booksp .imgcard .full-img img{
+		height: 260px;
+	}
+}

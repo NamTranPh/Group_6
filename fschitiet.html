@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/cardbook.css">
+  <link rel="stylesheet" href="../css/prdcard.css">
+  <link rel="stylesheet" href="../css/fschitiet.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- link js de lay data truoc -->
+  <script src="./js/dumbdata.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Festivals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./books.html">Books</a></li>
+              <li><a class="dropdown-item" href="./festival.html">Festival</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="background-image: url('https://backstage.vn/storage/2020/06/dwp-2017-djakarta-warehouse-project-garudha-loop-central.jpg')">
+          <div class="carousel-caption">
+            <h5>First slide label</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo commodi aut excepturi consequatur
+              quibusdam explicabo? Doloremque voluptates corrupti facere optio veniam at vel cupiditate similique.
+              Maiores eveniet quod consectetur iusto.</p>
+          </div>
+        </div>
+        <div class="carousel-item"
+          style="background-image: url('https://statics.vinpearl.com/cac-le-hoi-am-nhac-tren-the-gioi-7_1667985200.jpg')">
+          <div class="carousel-caption">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dicta est voluptate, aliquid nihil
+              quam deleniti voluptates sed incidunt eius! A magnam quis aperiam deleniti cumque dicta saepe id delectus?
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item"
+          style="background-image: url('https://statics.vinpearl.com/cac-le-hoi-am-nhac-tren-the-gioi-0_1667985261.jpg')">
+          <div class="carousel-caption">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae saepe quo aspernatur cupiditate.
+              Provident itaque porro officia sapiente totam, nam impedit maiores assumenda laborum. Perspiciatis maiores
+              mollitia unde tempora!.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+  <section class="detailpage">
+    <div class="than">
+      <div class="tongquat">
+        <div class="chitiet" id="chitiettong">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section class="foot">
+    <footer class="footer-distributed">
+      <!-- Left -->
+      <div class="footer-left">
+        <h3>Festivals<span>.com</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+          |
+          <a href="#">Books</a>
+        </p>
+
+        <p class="footer-date-name">Started <strong>20/5/2023</strong></p>
+      </div>
+      <!-- Center -->
+      <div class="footer-center">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p><span>Hà Nội</span>Việt Nam</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>+84 943178267</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>G2.Aptech@gmail.com</p>
+        </div>
+      </div>
+      <!-- Right  -->
+      <div class="footer-right">
+        <p class="footer-follow">
+          <span>Follow Us</span>
+          <strong>Festivals.com</strong>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut, perferendis aut atque saepe sequi dolorum
+          sint velit pariatur non facere blanditiis officiis!
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+<!-- Link script -->
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<!-- CODE LỌC DATA -->
+<script src="./js/fschitiet.js"></script>
+
+</html>

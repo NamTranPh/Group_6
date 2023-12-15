@@ -1,0 +1,23 @@
+.carousel-item {
+    height: 65vh;
+    min-height: 550px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  #navbar{
+    background-color: #615e5e90;
+    transition: background-color 0.3s;
+  }
+  #navbar .nav-link, #navbar .navbar-brand{
+    color: #f2f2f2;
+  }
+  #navbar.scrolled .nav-link, #navbar.scrolled .navbar-brand{
+    color: #111;
+  }
+  #navbar.scrolled {
+    background-color: #dedbdb;
+  }

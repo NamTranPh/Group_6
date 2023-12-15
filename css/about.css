@@ -1,0 +1,86 @@
+body {
+    overflow-x:hidden;
+    background-color: #444442;
+    background-image: url(https://free4kwallpapers.com/uploads/wallpaper/night-festival--andre-benz--unsplash-wallpaper-1024x768-wallpaper.jpg);
+}
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .header-text{
+    text-decoration-color: #d8a61b;
+  }
+
+.row{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex; 
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+  .column {
+    float: left;
+    width: 28%;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px;
+    
+  }
+  
+  .card {
+    box-shadow: 10px 10px 16px 0 rgba(216, 166, 27, 0.2);
+    margin: 8px;
+    border-radius: 5px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+.detailpage .than{
+    justify-content: center;
+    /* margin-left: 20px; */
+}
+.detailpage .conten1 h3{
+    color: #d8a61b;
+}
+.detailpage .tongquat{
+    border-style: solid;
+    border: 1px;
+    width: 86%;
+    margin: auto;
+    margin-top: 50px;
+    padding: auto;
+    
+}
+.detailpage .chitiet p{
+    text-align: justify;
+}
+.detailpage .conten{
+    height: 50px;
+}
+.detailpage img{
+    margin-bottom: 20px;
+    width: 50%;
+}

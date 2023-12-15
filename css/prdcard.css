@@ -1,0 +1,66 @@
+/* Prdcard */
+.prdcard .title{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+}
+.prdcard .title span{
+  color: #d8a61b;
+}
+.prdcard .main{
+  height: 100%;
+}
+.prdcard .more{
+  /* margin-bottom: 0; */
+  /* position: absolute; */
+  grid-gap: 10px;
+  bottom: 5px;
+}
+.prdcard .more .moredate{
+  top: 50%;
+  right: 30px;
+  transform: translateY(20%);
+}
+.prdcard .card-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  height: calc(2 * 1.2em);
+}
+.prdcard .content span{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.prdcard .imgcard{
+  overflow: hidden;
+  }
+.prdcard .prd{
+  padding-top: 20px;
+
+}
+.prdcard .card img{
+  transition: all 1.3s ease;
+  }
+.prdcard .card:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+  }
+@media (max-width:2000px) {
+  .prdcard .card img{
+    max-height: 172px;
+    }
+}
+@media (max-width:1200px) {
+  .prdcard .card img{
+    max-height: 302px;
+    }
+}
+  /* End Prdcard */
