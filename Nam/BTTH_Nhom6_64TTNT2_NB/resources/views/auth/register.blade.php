@@ -17,6 +17,9 @@
 </head>
 
 <body>
+@extends('layouts.app')
+
+@section('content')
     <div class="container">
         <div class="forms-container">
             <div class="login-register">
@@ -84,7 +87,7 @@
                             </span>
                         @enderror
                     </div>
-                    <input type="submit" value="Đăng ký" class="btn-register">
+                    <input type="submit" value="{{ __('Đăng ký') }}" class="btn-register">
                 </form>
             </div>
         </div>
@@ -94,13 +97,16 @@
                 <div class="content">
                     <h2>Bạn đã có tài khoản ?</h2>
                     <p>Đăng nhập vào trang web để nhận những thông tin hữu ích về những chuyến đi thú vị.</p>
-                    <!-- <button class="btn-transparent" id="login-btn">Đâng nhập</button> -->
-                    <a href="" class="btn-transparent">Đăng nhập</a>   
+                    {{-- Button --}}
+                    {{-- @if (Route::has('login')) --}}
+                        <a class="btn-transparent" href="{{ route('login') }}">{{ __('Đăng nhập')}}</a>
+                    {{-- @endif --}}
                 </div>
                 <img src="./Img/register.svg" class="image" alt="">
             </div>
         </div>
     </div>
+    @endsection
 </body>
 <script src=" {{ url('/js/register.js') }} "></script>
 </html>

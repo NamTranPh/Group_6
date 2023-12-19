@@ -19,6 +19,6 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::middleware('password.confirm')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware('password.confirm')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
