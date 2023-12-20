@@ -389,6 +389,7 @@ footer {
   text-overflow: ellipsis;
   white-space: normal;
   height: calc(2 * 1.2em);
+  font-size: 20px;
 }
 .prdcard .content span{
   display: -webkit-box;
@@ -422,4 +423,17 @@ footer {
     max-height: 302px;
     }
 }
+.prd .imgcard img.img-fluid {
+  height: 100%; 
+}
+.prd .imgcard {
+  position: relative;
+  overflow: hidden;
+}
+
+.prd .imgcard img {
+  width: 100%; 
+  height: auto; 
+}
+
   /* End Prdcard */
