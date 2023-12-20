@@ -22,16 +22,14 @@
 @section('content')
     <div class="container">
         <div class="forms-container">
-            <div class="login-register">
-                <!-- Register -->
-                <form method="POST" action="{{ route('register') }}" class="register-form">
-                    @csrf
+            <!-- Register -->
+            <form method="POST" action="{{ route('register') }}" class="register-form">
+                @csrf
                     <h2 class="title">Đăng ký</h2>
-
                     <div class="input-field">
-                        <label for="fullname"><i class="fas fa-user"></i></label>
-                        <input id="fullname" type="text" class="@error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname" autofocus placeholder="Nhập họ tên của bạn">
-                        @error('fullname')
+                        <label for="username"><i class="fas fa-user"></i></label>
+                        <input id="username" type="text" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Nhập tài khoản">
+                        @error('username')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -39,9 +37,9 @@
                     </div>
                     
                     <div class="input-field">
-                        <label for="username"><i class="fas fa-user"></i></label>
-                        <input id="username" type="text" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Nhập tài khoản">
-                        @error('username')
+                        <label for="fullname"><i class="fas fa-user"></i></label>
+                        <input id="fullname" type="text" class="@error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname" autofocus placeholder="Nhập họ tên của bạn">
+                        @error('fullname')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -69,6 +67,16 @@
                     </div>
 
                     <div class="input-field">
+                        <label for="address"><i class="fas fa-map-marker"></i></label>
+                        <input id="address" type="text" class="@error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus placeholder="Nhập địa chỉ">
+                        @error('address')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="input-field">
                         <label for="password"><i class="fas fa-lock"></i></label>
                         <input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus placeholder="Nhập mật khẩu">
                         @error('password')
@@ -88,8 +96,7 @@
                         @enderror
                     </div>
                     <input type="submit" value="{{ __('Đăng ký') }}" class="btn-register">
-                </form>
-            </div>
+            </form>
         </div>
 
         <div class="panels-container">
