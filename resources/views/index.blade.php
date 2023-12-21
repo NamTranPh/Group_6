@@ -31,10 +31,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="op navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="">Trang chủ</a>
+            <a class="nav-link" href="/">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/home">Đăng nhập</a>
+            <a class="nav-link" href="/login">Đăng nhập</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/register">Đăng kí</a>

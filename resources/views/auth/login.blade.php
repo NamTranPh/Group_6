@@ -49,7 +49,9 @@
                         </span>
                         @enderror
                     </div>
-                    <input type="submit" value="{{ __('Đăng nhập') }}" class="btn-login">
+                    <a href="/alert">
+                        <input type="" value="{{ __('Đăng nhập') }}" class="btn-login">
+                    </a>    
                 </form>
             </div>
         </div>

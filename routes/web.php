@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homepageController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\arlertController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +25,4 @@ Route::get('/search', [homepageController::class, 'search'])->name('search');
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/alert', [arlertController::class, 'alert']);
