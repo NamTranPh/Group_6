@@ -14,8 +14,12 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Chúc mừng bạn đã đăng kí thành công!') }} <br>
+                    {{ __('Vui lòng bấm vào nút để qua trang chủ!') }}
                 </div>
+                <button>
+                    <a class="nav-link" href="/">Trang chủ</a>
+                </button>
             </div>
         </div>
     </div>
