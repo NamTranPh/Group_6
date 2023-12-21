@@ -68,7 +68,7 @@ form.register-form {
   height: 55px;
   background-color: #fff;
   margin: 8px 0;
-  border-radius: 55px;
+  border-radius: 30px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 .4rem;

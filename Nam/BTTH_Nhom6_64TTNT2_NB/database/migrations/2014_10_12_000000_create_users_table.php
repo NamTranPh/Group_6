@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->string('fullname');
             $table->string('email')->unique();
-            $table->string('phone');
-            $table->string('address')->nullable(); // Add this line
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('phone');
+            $table->string('address')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken(); //Càn xóa khi chuyển vào dự án
             $table->timestamps();
         });
     }

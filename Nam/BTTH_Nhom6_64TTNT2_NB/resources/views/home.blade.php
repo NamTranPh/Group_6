@@ -5,15 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    
 
-                    {{ __('Bạn đã đăng nhập thành công!') }}
+                    {{-- {{ __('Bạn đã đăng nhập thành công!') }} --}}
+                    <h2>Bạn đã đăng nhâp thành công</h2>
+                    <h2>Home page</h2>
                 </div>
             </div>
         </div>

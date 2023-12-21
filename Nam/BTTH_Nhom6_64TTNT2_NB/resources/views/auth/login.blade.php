@@ -59,10 +59,8 @@
                 <div class="content">
                     <h2>Bạn chưa có tài khoản ?</h2>
                     <p>Hãy gia nhập cùng chúng tôi để có thể trải nghiệm những chuyến đi thú vị. Gia nhập bằng cách ấn nút phía dưới</p>
-                    {{-- Button --}}
-                    {{-- @if (Route::has('register')) --}}
-                        <a class="btn-transparent" href="{{ route('register') }}">{{ __('Đăng ký') }}</a>
-                    {{-- @endif --}}
+                    {{-- Button chuyển link --}}
+                    <a class="btn-transparent" href="{{ route('register') }}">{{ __('Đăng ký') }}</a>
                 </div>
                 <img src="./Img/login.svg" class="image" alt="">
             </div>

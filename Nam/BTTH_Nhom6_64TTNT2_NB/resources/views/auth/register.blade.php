@@ -28,7 +28,7 @@
                     <h2 class="title">Đăng ký</h2>
                     <div class="input-field">
                         <label for="username"><i class="fas fa-user"></i></label>
-                        <input id="username" type="text" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Nhập tài khoản">
+                        <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Nhập tài khoản">
                         @error('username')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -38,7 +38,7 @@
                     
                     <div class="input-field">
                         <label for="fullname"><i class="fas fa-user"></i></label>
-                        <input id="fullname" type="text" class="@error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname" autofocus placeholder="Nhập họ tên của bạn">
+                        <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="fullname" autofocus placeholder="Nhập họ tên của bạn">
                         @error('fullname')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -48,7 +48,7 @@
 
                     <div class="input-field">
                         <label for="email"><i class="fas fa-envelope"></i></label>
-                        <input id="email" type="text" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Nhập email">
+                        <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Nhập email">
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -58,7 +58,7 @@
                     
                     <div class="input-field">
                         <label for="phone"><i class="fas fa-phone"></i></label>
-                        <input id="phone" type="text" class="@error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Nhập số điện thoại">
+                        <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="Nhập số điện thoại">
                         @error('phone')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -68,7 +68,7 @@
 
                     <div class="input-field">
                         <label for="address"><i class="fas fa-map-marker"></i></label>
-                        <input id="address" type="text" class="@error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus placeholder="Nhập địa chỉ">
+                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus placeholder="Nhập địa chỉ">
                         @error('address')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -78,7 +78,7 @@
 
                     <div class="input-field">
                         <label for="password"><i class="fas fa-lock"></i></label>
-                        <input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus placeholder="Nhập mật khẩu">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus placeholder="Nhập mật khẩu">
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -88,12 +88,13 @@
 
                     <div class="input-field">
                         <label for="password-confirm"><i class="fas fa-lock"></i></label>
-                        <input id="password-confirm" type="password" class="@error('password-confirm') is-invalid @enderror" name="password-confirm" value="{{ old('password-confirm') }}" required autocomplete="password-confirm" autofocus placeholder="Nhập lại mật khẩu">
-                        @error('password-confirm')
+                        {{-- <input id="password-confirm" type="password" class="form-control @error('password-confirm') is-invalid @enderror" name="password-confirm" value="{{ old('password-confirm') }}" required autocomplete="password-confirm" autofocus placeholder="Nhập lại mật khẩu"> --}}
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Nhập lại mật khẩu">
+                        {{-- @error('password-confirm')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                        @enderror
+                        @enderror --}}
                     </div>
                     <input type="submit" value="{{ __('Đăng ký') }}" class="btn-register">
             </form>
@@ -104,10 +105,8 @@
                 <div class="content">
                     <h2>Bạn đã có tài khoản ?</h2>
                     <p>Đăng nhập vào trang web để nhận những thông tin hữu ích về những chuyến đi thú vị.</p>
-                    {{-- Button --}}
-                    {{-- @if (Route::has('login')) --}}
-                        <a class="btn-transparent" href="{{ route('login') }}">{{ __('Đăng nhập')}}</a>
-                    {{-- @endif --}}
+                    {{-- Button  chuyển trang--}}
+                    <a class="btn-transparent" href="{{ route('login') }}">{{ __('Đăng nhập')}}</a>
                 </div>
                 <img src="./Img/register.svg" class="image" alt="">
             </div>
