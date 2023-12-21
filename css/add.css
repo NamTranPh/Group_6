@@ -1,0 +1,18 @@
+.container{
+    border: solid 1px ;
+    border-radius: 3px;
+    margin-top: 150px;
+}
+.con{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcafebiz.vn%2Fchiem-nguong-loat-anh-du-lich-dep-nhat-the-gioi-nam-2018-cau-vang-tai-da-nang-cung-gop-mat-20181222104929682.chn&psig=AOvVaw06PNNaa3KbXdsv1cAU2bsw&ust=1703232973717000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjWnreLoIMDFQAAAAAdAAAAABAD');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.sidebar-wrapper {
+	height: 100vh;
+	width: 340px;
+	position: sticky;
+	top: 0;
+	transition: 0.2s ease;
+}
+.content-wrapper {
+	height: 200vh;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+.main-wrapper {
+	display: flex;
+}
+.sidebar-logo {
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    overflow: hidden;
+
+    
+}
+.brand-name {
+	margin: 0;
+}
+
+.nav-block {
+	padding: 0 8px;
+	list-style-type: none;
+}
+.nav-title {
+	color: #808184;
+	padding: 12px 6px;
+}
+.nav-item {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 12px;
+	margin-bottom: 2px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.nav-item:hover {
+	background-color: #8081844a;
+	transition: 0.2s ease;
+}
+
+.nav-item.nav-active {
+	background-color: #0cb9c5;
+	color: #fff;
+}
+.nav-item.nav-active img {
+	filter: invert(1);
+}
+
+.header-wrapper {
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+    text-align: center;
+
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-3 {
+	width: calc(3 * 100% / 12);
+}
+.products {
+	padding: 12px 12px;
+}
+.product-card {
+	position: relative;
+	border: 1px solid #ececec;
+	background-color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.product-img .main-img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: top;
+	display: block;
+}
+.product-name {
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	font-size: 20px;
+	padding: 10px 12px;
+}
+.product-desc {
+	margin: 0;
+	padding: 8px 12px;
+}
+.product-price {
+	color: rgb(44, 191, 44);
+	padding: 8px 12px 40px 12px;
+}
+
+.icon-preview {
+	width: 38px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background-color: #8081846f;
+	box-sizing: border-box;
+	position: absolute;
+	top: 20px;
+	right: -48px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.icon-preview:hover {
+	background-color: #000;
+}
+
+.icon-preview:hover img {
+	filter: invert(1);
+}
+.product-card:hover .icon-preview {
+	right: 24px;
+}
+
+.sidebar-small {
+	width: 76px;
+}
+.sidebar-small .nav-title,
+.sidebar-small .nav-item span {
+	display: none;
+}
+.sidebar-small .nav-item {
+	justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+	.col-sm-12 {
+		width: calc(12 * 100% / 12);
+	}
+}
