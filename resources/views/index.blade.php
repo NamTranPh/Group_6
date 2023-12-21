@@ -20,7 +20,7 @@
   <!-- Navigation -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Festivals</a>
+      <a class="navbar-brand" href="/">Festivals</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,12 +29,15 @@
         <button class="btn btn-success" type="submit">Search</button>
       </form>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
+        <ul class="op navbar-nav ms-auto">
           <li class="nav-item active">
             <a class="nav-link" href="">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Đăng nhập</a>
+            <a class="nav-link" href="/home">Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Đăng kí</a>
           </li>
         </ul>
       </div>
@@ -104,7 +107,7 @@
 
   <section class="prdcard">
     <div class="container py-2">
-        <h2 class="title"><span>Tour</span></h2>
+        <h2 class="title"><span>Tour Hot</span></h2>
         <div class="row flex-wrap">
             @foreach($products as $row)
                 <!-- Card start -->
@@ -124,6 +127,7 @@
                                 </div>
                             </div>
                             <p class="text text-muted mb-2">Price: {{$row->price}}$</p>
+                            <button style="width: 270px" type="button" class="btn btn-success">Buy</button> 
                         </div>
                     </div>
                 </div>

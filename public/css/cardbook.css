@@ -356,6 +356,10 @@ footer {
   #navbar.scrolled {
     background-color: #dedbdb;
   }
+  .op{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+  }
 
   /* Prdcard */
 .prdcard .title{
@@ -366,6 +370,8 @@ footer {
 }
 .prdcard .title span{
   color: #d8a61b;
+  font-size: 50px;
+  font-weight: 400;
 }
 .prdcard .main{
   height: 100%;
@@ -435,5 +441,20 @@ footer {
   width: 100%; 
   height: auto; 
 }
+/* CSS Style */
+.prd .main:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  transform: scale(1.05); /* Hiệu ứng phóng to */
+}
+
+.prd .main:hover .card-body {
+  background-color: #f8f9fa; /* Màu nền thay đổi khi hover */
+}
+
+.prd .main:hover .btn {
+  background-color: #28a745; /* Màu nền của nút thay đổi khi hover */
+  color: #fff; /* Màu chữ của nút thay đổi khi hover */
+}
+
 
   /* End Prdcard */

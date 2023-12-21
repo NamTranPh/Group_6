@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homepageController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +22,6 @@ Route::get('/', function () {
 
 Route::get('/', [homepageController::class, 'index']);
 Route::get('/search', [homepageController::class, 'search'])->name('search');
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
